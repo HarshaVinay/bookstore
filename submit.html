@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            table {
+                background-image: linear-gradient(gold,rgb(17, 226, 226));
+                margin-left: 30%;
+                padding: 20px;
+                border-radius: 15px;
+            }
+    
+            label {
+                font-size: larger;
+                font-weight: bolder;
+            }
+    
+            td {
+                padding-right: 10px;
+                padding-top: 5px;
+                line-height: 30px;
+            }
+    
+            input[type="submit"],
+            input[type="reset"] {
+                margin-right: 30px;
+            }
+    
+            input[type="text"] , input[type="password"]{
+                border-radius: 5px;
+            }
+            </style>
+    </head>
+    <body>
+        <div class="form">
+            <h1 style="text-align: center;">User Form</h1>
+        </div>
+        <form action="hello.org">
+            <table>
+                <tr>
+                    <td>
+                        <label for="password">User Name:</label>
+                    <td>
+                        <input type="text" id="password" size="35" name="UserName" placeholder="Enter your User name" required>
+                    </td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Password:</label>
+                    <td>
+                        <input type="password" id="Password" size="35" name="Password" placeholder="Enter Password" required>
+                    </td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ConfirmPassword">Confirm Password:</label>
+                    <td>
+                        <input type="password" id="ConfirmPassword" size="35" name="ConfirmPassword" placeholder="Confirm your Password" required>
+                    </td>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding-left: 140px;"><input type="reset"><input type="submit"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

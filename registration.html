@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table {
+            background-image: linear-gradient(gold,rgb(17, 226, 226));
+            margin-left: 30%;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        label {
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+        td {
+            padding-right: 10px;
+            padding-top: 5px;
+            line-height: 30px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            margin-right: 30px;
+        }
+
+        input[type="text"] {
+            border-radius: 5px;
+        }
+
+        select {
+            width: 270px;
+            height: 20px;
+            padding-left: 100px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <h1 style="text-align: center;">Registration Form</h1>
+    </div>
+    <form action="submit.html">
+        <table>
+            <tr>
+                <td>
+                    <label for="name">Student Name:</label>
+                <td>
+                    <input type="text" id="name" size="35" name="Name" placeholder="Enter your full name" required>
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Branch:</label>
+                <td>
+                    <input type="radio" name="Branch" id="CSE" value="CSE" required>
+                    <label for="CSE">CSE</label>
+                    <input type="radio" name="Branch" id="CST" value="CST" required>
+                    <label for="CST">CST</label>
+                    <input type="radio" name="Branch" id="AIM" value="AIM" required>
+                    <label for="AIM">AIM</label>
+                    <input type="radio" name="Branch" id="CAI" value="CAI" required>
+                    <label for="CAI">CAI</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Year:</label>
+                </td>
+                <td>
+                    <select name="Year">
+                        <option value="Firstyear" required>First year</option>
+                        <option value="Secondyear" required>Second year</option>
+                        <option value="Thirdyear" required>Third year</option>
+                        <option value="Fourthyear" required>Fourth year</option>
+                    </select>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>DOB:</label>
+                </td>
+                <td>
+                    <input type="date" name="DOB" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Gender:</label></td>
+                <td><input type="radio" name="Gender" id="Male" value="Male" required>
+                    <label for="Male">Male</label>
+                    <input type="radio" name="Gender" id="Female" value="Female" required>
+                    <label for="Female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Phn_no">Phone Number:</label></td>
+                <td><input type="tel" id="Phn_no" name="Phn_no" placeholder="Enter your contact number"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding-left: 140px;"><input type="reset"><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
